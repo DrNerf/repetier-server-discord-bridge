@@ -20,7 +20,6 @@ async fn main() {
 }
 
 fn handle_push_notification(message: &String) -> String {
-    
     let result = block_in_place(move || {
         return block_on(discord_client::invoke_webhook(message))
     });
