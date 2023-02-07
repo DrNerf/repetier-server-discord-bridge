@@ -16,7 +16,7 @@ async fn main() {
 
     println!("Discord bridge server running on: {PORT}");
 
-    warp::serve(push).run(([127, 0, 0, 1], PORT)).await;
+    warp::serve(push).run(([0, 0, 0, 0], PORT)).await;
 }
 
 fn handle_push_notification(message: &String) -> String {
