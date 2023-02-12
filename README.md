@@ -1,7 +1,7 @@
 # Repetier Server Discord bridge
 
 ### The problem:
-Repetier Server has built in push messages, however they don't work with Discord webhooks.
+[Repetier Server](https://www.repetier-server.com/) has built in push messages, however they don't work with [Discord webhooks](https://discord.com/developers/docs/resources/webhook).
 
 ----------
 ### The solution:
@@ -17,7 +17,7 @@ cargo build --release
 ```
 
 ### 2. Setup your webhook
-Create a webhook integration in the desired Discord text channel. Check this for more information on how to do that.
+Create a webhook integration in the desired Discord text channel. Check [this](https://hookdeck.com/webhooks/platforms/how-to-get-started-with-discord-webhooks#how-do-i-add-a-webhook-to-discord) for more information on how to do that.
 
 Once you have your webhook URL you need to set the `DISCORD_BRIDGE_HOOK_URL` environment variable. It should look something like this:
 ```console
